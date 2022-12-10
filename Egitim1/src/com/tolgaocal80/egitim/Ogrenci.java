@@ -11,12 +11,66 @@ public class Ogrenci {
     height,age, nationality, weight, grade
      */
 
-    public double height;
-    public int age;
-    public String nationality;
-    public float weight;
-    public int grade;
-    public String studentName;
+    private double height;
+    private int age;
+    private String nationality;
+    private float weight;
+    private int grade;
+    private String studentName;
+
+
+    public double getHeight() {
+        return height;
+    }
+
+    public void setHeight(double h) {
+        height = h;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public String getNationality() {
+        return nationality;
+    }
+
+    public void setNationality(String nationality) {
+        this.nationality = nationality;
+    }
+
+    public int getGrade() {
+        return grade;
+    }
+
+    public void setGrade(int grade) {
+        this.grade = grade;
+    }
+
+    public String getStudentName() {
+        return studentName;
+    }
+
+    public void setStudentName(String studentName) {
+        this.studentName = studentName;
+    }
+
+    public void setWeight(float agirlik){
+        if(agirlik > 0){
+            weight = agirlik;
+            System.out.println("Ogrencinin agirlik degeri atandı");
+        }else{
+            System.out.println("Agirlık 0 dan kucuk olamaz. Atanmadı.");
+        }
+    }
+
+    public float getWeight(){
+        return this.weight;
+    }
 
 
     public Ogrenci(){
